@@ -87,7 +87,7 @@ console.log(array08.sort((a, b) => b - a)); // Descending
 // --------------------------------------------------------------------------------
 // 9.How would you find the sum of all elements in an array?
 const array09 = [23, 98, 12, 45, 3, 65, 87];
-console.log(array09.reduce((acc, cur) => acc + cur));
+console.log(array09.reduce((acc, cur) => acc + cur, 0));
 
 // --------------------------------------------------------------------------------
 // 10.Write a function that rotates an array by `n` positions.
@@ -580,5 +580,13 @@ console.log(shiftArray(array50));
 
 // --------------------------------------------------------------------------------
 // 51.push(), pop(), shift(), unshift(), splice(), slice(), map(), filter(), reduce()
-
+// pop() - removes last element
+// push() - adds last element
+// shift() - removes first element
+// unshift() - adds first element
+// slice(index, number of items) - remove given number of items starting from given index
+// slice(start,end) - returns copy of a section of array
 // --------------------------------------------------------------------------------
+for (i = 0; i < array.length; i++) {}
+for (i = 0; i <= array.length - 1; i++) {}
+// both are same
