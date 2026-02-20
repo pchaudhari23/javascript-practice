@@ -476,3 +476,37 @@ const alphabets = "abcdefghijklmnopqrstuvwxyz";
 [...alphabets].forEach((letter) => console.log(letter));
 
 // --------------------------------------------------------------------------------
+// STRING METHODS SUMMARY:
+// 1. `split()` – Splits a string into an array.
+// 2. `join()` – Joins array elements into a string.
+// 3. `toLowerCase()` – Converts string to lowercase.
+// 4. `toUpperCase()` – Converts string to uppercase.
+// 5. `substring()` – Extracts part of a string.
+// 6. `slice()` – Extracts a section of a string.
+// 7. `includes()` – Checks if a substring exists.
+// 8. `indexOf()` – Finds the first occurrence index.
+// 9. `lastIndexOf()` – Finds the last occurrence index.
+// 10. `startsWith()` – Checks prefix.
+// 11. `endsWith()` – Checks suffix.
+// 12. `replace()` – Replaces part of a string.
+// 13. `match()` – Matches string against a regex.
+// 14. `trim()` – Removes whitespace from both ends.
+// 15. `repeat()` – Repeats a string n times.
+// 16. `charAt()` – Returns character at a given index.
+// 17. `localeCompare()` – Compares strings lexicographically.
+// 18. `String.fromCharCode()` – Converts ASCII code to character.
+// 19.`reverse()`: Reverses the order of elements in an array (used in conjunction with `split()` and `join()`
+
+// REGEX SUMMARY:
+// 1. `/\s+/g` – Matches one or more whitespace characters.
+// 2. `/\d/g` – Matches numeric digits.
+// 3. `/^\d+$/` – Checks if a string contains only digits.
+// 4. `/[aeiouAEIOU]/g` – Matches all vowels.
+// 5. `/\b\w/g` – Matches first character of each word.
+// 6. `/[^\w]/g` – Removes punctuation and special characters.
+// 7. `/[^a-zA-Z0-9\s]/g` – Removes special characters.
+// 8. `/the/g` – Finds all occurrences of a word.
+// 9. `/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/` – Email validation.
+// 10. `/\d/` – Checks if string contains at least one digit.
+
+// --------------------------------------------------------------------------------

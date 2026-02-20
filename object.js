@@ -570,3 +570,25 @@ obj50.circular = obj50;
 console.log(hasCircularReference(obj50));
 
 // --------------------------------------------------------------------------------
+// OBJECT METHODS SUMMARY:
+// 1. `Object.keys()` – Returns an array of an object’s keys.
+// 2. `Object.values()` – Returns an array of an object’s values.
+// 3. `Object.entries()` – Returns key–value pairs as an array.
+// 4. `Object.assign()` – Copies properties from source objects to a target.
+// 5. `Object.fromEntries()` – Converts key–value pairs back into an object.
+// 6. `Object.freeze()` – Prevents modification of an object.
+// 7. `Object.getOwnPropertyNames()` – Returns all own property names.
+// 8. `Object.getOwnPropertyDescriptor()` – Gets property metadata.
+// 9. `Object.setPrototypeOf()` – Sets an object’s prototype.
+// 10. `hasOwnProperty()` – Checks if a property exists directly on an object.
+// 11. `in` operator – Checks if a key exists (including prototype chain).
+// 12. `delete` – Removes a property from an object.
+// 13. Destructuring – Extracts properties into variables.
+// 14. Spread operator (`...`) – Shallow clones or merges objects.
+// 15. `JSON.stringify()` – Converts an object to JSON string.
+// 16. `JSON.parse()` – Converts JSON string back to an object.
+// 17. `for...in` – Iterates over enumerable object keys.
+// 18. Recursion – Used for deep clone, deep equality, flattening.
+// 19. `Object.create()` – Creates an object with a specified prototype.
+
+// --------------------------------------------------------------------------------

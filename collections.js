@@ -125,3 +125,11 @@ weakMap.set(tempObj, "Some temporary data");
 tempObj = null; // The WeakMap entry for tempObj is removed automatically
 
 // --------------------------------------------------------------------------------
+// COLLECTIONS SUMMARY:
+
+// SETS: Used to store unique values of any type.
+// WEAKSETS: Similar to Sets but with weak references to objects.
+// MAPS: Used to store key-value pairs where keys can be of any type.
+// WEAKMAPS: Similar to Maps but with weak references to objects.
+
+// --------------------------------------------------------------------------------
