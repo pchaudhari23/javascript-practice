@@ -578,47 +578,38 @@ function shiftArray(arr) {
 const array50 = [1, 2, 3, 4, 5];
 console.log(shiftArray(array50));
 
-// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
 // ARRAY METHODS SUMMARY:
-// push(), pop(), shift(), unshift(), splice(), slice(), map(), filter(), reduce()
-// pop() - removes last element
-// push() - adds last element
-// shift() - removes first element
-// unshift() - adds first element
-// slice(index, number of items) - remove given number of items starting from given index
-// slice(start,end) - returns copy of a section of array
-// ----------------------------------------------------------------
+// pop(): Removes last element
+// push(): Adds last element
+// shift(): Removes first element
+// unshift(): Adds first element
+// splice(index, number of items): Remove given number of items starting from given index
+// slice(start,end): Returns copy of a section of array
+// map(): Creates a new array by transforming each element.
+// filter(): Creates a new array with elements that pass a condition.
+// sort(): Sorts elements of an array (lexicographically by default).
+// concat(): Merges two or more arrays into a new array.
+// reverse(): Reverses the order of elements in an array in place.
+// reduce(): Reduces an array to a single value.
+// forEach(): Iterates over each element without returning a new array.
+// find(): Returns the first element that satisfies a condition.
+// findIndex(): Returns the index of the first matching element.
+// some(): Checks if at least one element satisfies a condition.
+// every(): Checks if all elements satisfy a condition.
+// includes(): Checks if an array contains a specific value.
+// indexOf(): Returns the first index of a value.
+// lastIndexOf(): Returns the last index of a value.
+// flat(): Flattens nested arrays (default depth = 1).
+// join(): Converts an array into a string using a separator.
+// Array.isArray(): Checks if a value is an array.
+// Spread operator (...): Expands array elements.
+// Set: Used to remove duplicate values.
+// Map: Used for unique objects based on a key.
 
-// 1. `push()` – Adds one or more elements to the end of an array.
-// 2. `pop()` – Removes and returns the last element of an array.
-// 3. `shift()` – Removes and returns the first element of an array.
-// 4. `unshift()` – Adds one or more elements to the beginning of an array.
-// 5. `splice()` – Adds, removes, or replaces elements at a specific index.
-// 6. `slice()` – Returns a shallow copy of a portion of an array.
-// 7. `concat()` – Merges two or more arrays into a new array.
-// 8. `reverse()` – Reverses the order of elements in an array in place.
-// 9. `sort()` – Sorts elements of an array (lexicographically by default).
-// 10. `map()` – Creates a new array by transforming each element.
-// 11. `filter()` – Creates a new array with elements that pass a condition.
-// 12. `reduce()` – Reduces an array to a single value.
-// 13. `forEach()` – Iterates over each element without returning a new array.
-// 14. `find()` – Returns the first element that satisfies a condition.
-// 15. `findIndex()` – Returns the index of the first matching element.
-// 16. `some()` – Checks if at least one element satisfies a condition.
-// 17. `every()` – Checks if all elements satisfy a condition.
-// 18. `includes()` – Checks if an array contains a specific value.
-// 19. `indexOf()` – Returns the first index of a value.
-// 20. `lastIndexOf()` – Returns the last index of a value.
-// 21. `flat()` – Flattens nested arrays (default depth = 1).
-// 22. `join()` – Converts an array into a string using a separator.
-// 23. `Array.isArray()` – Checks if a value is an array.
-// 24. Spread operator (`...`) – Expands array elements.
-// 25. `Set` – Used to remove duplicate values.
-// 26. `Map` – Used for unique objects based on a key.
-
-// ----------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------
 // both are same
 // for (i = 0; i < array.length; i++) {}
 // for (i = 0; i <= array.length - 1; i++) {}
 
-// --------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------

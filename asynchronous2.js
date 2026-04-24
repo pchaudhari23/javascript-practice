@@ -37,14 +37,17 @@ const makeFetchRequest = async () => {
   try {
     const response = await fetch(API_URL);
 
-    if (!response.ok) {
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Fetched Data:", data);
+      return data;
+    } else {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
-    const data = await response.json();
-    console.log("Fetched Data:", data);
   } catch (error) {
     console.error("Error fetching data:", error);
+    throw error;
   }
 };
 
@@ -64,32 +67,37 @@ const postDataWithFetch = async () => {
       body: JSON.stringify(postData),
     });
 
-    if (!response.ok) {
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Posted Data Response:", data);
+      return data;
+    } else {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
-
-    const data = await response.json();
-
-    console.log("Posted Data Response:", data);
   } catch (error) {
     console.error("Error posting data:", error);
+    throw error;
   }
 };
 
 /*------------------------------------------------------------------------------------------------------ */
 
 const makeXMLHTTPRequest = () => {
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", API_URL, true);
-  xhr.onload = () => {
-    if (xhr.status >= 200 && xhr.status < 300) {
-      console.log("Fetched Data:", JSON.parse(xhr.responseText));
-    } else {
-      console.error(`HTTP error! Status: ${xhr.status}`);
-    }
-  };
-  xhr.onerror = () => console.error("Network error occurred.");
-  xhr.send();
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", API_URL, true);
+
+    xhr.onload = () => {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        resolve(JSON.parse(xhr.responseText));
+      } else {
+        reject(xhr.status);
+      }
+    };
+
+    xhr.onerror = () => reject("Network error");
+    xhr.send();
+  });
 };
 
 /*------------------------------------------------------------------------------------------------------ */
@@ -110,19 +118,3 @@ const handleServerResponse = async () => {
 
 handleServerResponse();
 
-// There should be either async/await with try/catch OR .then().catch()
-// Using both together is unnecessary even if technically not wrong.
-// then called on promise resolve, catch called on promise reject
-// Whatever is passed in resolve() - it is collected in then() method
-// Whatever is passed in reject() - it is collected in catch() method
-// await keyword in the async/ await function stops the function exceution until the code in front of await(eg: fetching data from api) is completed. Once we have the response data, the furthur code is executed.
-// .then() and .catch() - chain methods don't stop until the data from api is received. they continue the code after that and whenever the response is received, they will store or set the received data in variable
-// make a habit to write all the code in try catch blocks
-// make the await api call in the try block
-// Usually throw Error class object in a Promise reject
-// Promise.all, Promise.race????
-
-// Learn how to :
-// 1.Convert an async/await function into using .then().catch()
-// 2.Convert .then().catch() function into using async/await
-// 3.How to promisify a function
